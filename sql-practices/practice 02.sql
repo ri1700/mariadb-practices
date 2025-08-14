@@ -42,8 +42,3 @@ select max(salary) as '최고 연봉', min(salary) as '최저 연봉'
 
 -- 문제6.
 -- 현재, 근무중인 사원 중 나이가 제일 어린 사원과 제일 많은 사원의 나이를 각각 출력하세요.
-select period_diff(date_format(), '%y%m'), date_format(hire_date, '%y%m')) as '나이'
-	from employees;
-    
-select date_format(hire_date, '%y년 %m월')
-	from employees;
