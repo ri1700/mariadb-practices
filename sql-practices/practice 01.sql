@@ -80,4 +80,3 @@ select emp_no as '사번', title as '직책', from_date as '시작', to_date as 
 	from titles
 		where emp_no = 13250
 			order by from_date asc;
-            
