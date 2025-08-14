@@ -1,12 +1,10 @@
 -- 1) 집게쿼리: select 절에 통계 함수(count, max, min, sum, avg, variance, stdev, ...)
-
 select avg(salary), sum(salary)
 	from salaries;
     
 
 -- 2) select 절에 집계함수 (그룹함수)가 있는 경우, 어떤 컬럼도 select절에 올 수 없다.
 -- emp_no는 아무 의미가 없다.
-
 select emp_no, avg(salary)
 	from salaries;
     
