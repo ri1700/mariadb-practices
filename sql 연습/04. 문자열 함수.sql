@@ -7,6 +7,7 @@
 select upper('seoul'), ucase('Seoul')
 	from dual;
     
+    
 select upper(first_name)
 	from employees;
 
@@ -14,6 +15,7 @@ select upper(first_name)
 -- lower
 select lower('SEOUL'), lcase('SeouL')
 	from dual;
+    
     
 select lower(first_name)
 	from employees;
@@ -33,6 +35,7 @@ select first_name, hire_date
 -- lpad(오른쪽 정렬), rpad(왼쪽 정렬)
 select lpad('1234', 10, '-')
 	from dual;
+    
     
 select rpad('1234', 10, '-')
 	from dual;
