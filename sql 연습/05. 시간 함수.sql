@@ -2,6 +2,7 @@
 -- 시간 함수
 --
 
+
 -- cudate(), current_date
 select curdate(), current_date
 	from dual;
@@ -16,8 +17,10 @@ select curtime(), current_time
 select now(), sysdate()
 	from dual;
     
+    
 select now(), sleep(2), now()
 	from dual;
+    
     
 select now(), sleep(2), sysdate()
 	from dual;
@@ -27,6 +30,7 @@ select now(), sleep(2), sysdate()
 -- default format : %Y-%m-%d %h:%i:%s
 select date_format(now(), '%Y년 %m월 %d일 %h시 %i분 %s초')
 	from dual;
+
 
 select date_format(now(), '%d %b %y %h:%i:%s')
 	from dual;
