@@ -34,4 +34,4 @@ select ifnull(a.name, '없음') as '이름', b.name as '부서'
     
     
 -- full (outer) join
--- mariadb 지원 안함
+-- mariadb를 지원 안함
