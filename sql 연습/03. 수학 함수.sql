@@ -44,7 +44,3 @@ select greatest(10, 40, 20, 30), least(10, 40, 20, 30)
 
 select greatest('b', 'A', 'C', 'D'), least('hello', 'hela', 'hell')
 	from dual;
-
-
-
-
