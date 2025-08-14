@@ -2,6 +2,7 @@
 -- outer join
 --
 
+
 -- insert into dept values(null, '총무');
 -- insert into dept values(null, '개발');
 -- insert into dept values(null, '영업');
