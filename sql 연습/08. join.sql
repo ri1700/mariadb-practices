@@ -2,6 +2,7 @@
 -- inner join
 --
 
+
 -- 예제01: 현재, 근무하고 있는 직원의 이름과 직책을 모두 출력하세요.
 select a.first_name, b.title
 	from employees a, titles b
@@ -24,6 +25,7 @@ select first_name, gender, title
 --
 -- ANSI/ISO SQL1999 Join 문법
 --
+
 
 -- 1) natural join
 
@@ -80,6 +82,7 @@ select b.title as '직책', avg(a.salary) as '평균급여', count(*) as '직원
             and b.to_date = '9999-01-01'
 				group by b.title
 					having 직원수 > 100;
+
 
 -- 실습문제 02
 -- 현재, 부서별로 직책이 Engineer인 직원들에 대해서만 평균 연봉을 출력
