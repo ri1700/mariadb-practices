@@ -10,7 +10,7 @@ select count(*) from titles;
 --
 -- select 연습
 --
---
+
 
 -- 예제01 : deaprtments 테이블의 모든 데이터를 출력. / 9개ll
 select * from departments; 
@@ -60,7 +60,8 @@ select first_name as '이름',
        hire_date as '입사일'
 	from employees
 		where hire_date < '1991-01-01';
-        
+       
+       
 -- 논리 연산자
 -- 예제08: employees 테이블에서 1989년 이전에 입사한 여직원의 이름, 입사일을 출력
 select first_name as '이름',
@@ -69,12 +70,14 @@ select first_name as '이름',
 	from employees
 		where hire_date <= '1989-01-01'
 			and gender = 'f';
-            
+           
+           
 -- 에제09: dept_emp 테이블에서 부서 번호가 d005이거나 d009에 속한 사원의 사번, 부서번호 출력
 select emp_no, dept_no
 	from dept_emp
 		where dept_no = 'd005'
         or dept_no = 'd009';
+
 
 -- in 연산자	
 select emp_no, dept_no
@@ -130,5 +133,3 @@ select first_name, gender, hire_date
 	from employees
 		where gender = 'm'
 		order by hire_date asc;
-
-        
