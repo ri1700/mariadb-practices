@@ -46,6 +46,7 @@ select a.emp_no, a.first_name
             
             
 -- 서브쿼리로 해결alterselect dept_no
+--
 select a.emp_no, a.first_name
     from employees a, dept_emp b
 		where a.emp_no = b.emp_no
