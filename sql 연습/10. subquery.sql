@@ -103,7 +103,7 @@ select a.title, avg(b.salary)
 			and b.to_date = '9999-01-01'
 				group by a.title
 					having avg(b.salary) = (select min(avg_salary)
-											from( select a.title, avg(b.salary) as avg_salary
+											from(select a.title, avg(b.salary) as avg_salary
 													from titles a, salaries b
 														where a.emp_no = b.emp_no
 															and a.to_date = '9999-01-01'
