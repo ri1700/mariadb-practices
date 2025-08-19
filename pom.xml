@@ -4,4 +4,12 @@
   <artifactId>mariadb-practices</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <properties>
+		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
+	</properties>
+  <modules>
+  	<module>jdbc-practices</module>
+  </modules>
 </project>
