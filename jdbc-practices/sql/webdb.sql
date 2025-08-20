@@ -23,6 +23,9 @@ update dept set name = '서비스개발팀' where id = 2;
 desc email;
 alter table email change id id int auto_increment;
 
+-- count
+select count(*) from email;
+
 -- findAll
 select id, first_name, last_name, email from email order by id desc;
 
@@ -31,3 +34,8 @@ insert into email(first_name, last_name, email) values('둘','리','dooly@gmail.
 
 -- deleteByEmail 2
 delete from email where email = 'dooly@gmail.com';
+
+--
+-- bookshop application
+--
+
